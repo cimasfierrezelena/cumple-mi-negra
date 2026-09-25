@@ -1,0 +1,208 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<title>Feliz cumpleaños 💗</title>  
+</head>
+<body>
+    <div class="corazones">
+    <span>💗</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💖</span>
+    <span>💕</span>
+</div>
+    <div class="inicio">
+
+    <h1>🎂 FELIZ CUMPLEAÑOS 🎂</h1>
+
+    <h2>Para mi negra favorita 💗</h2>
+
+    <p>
+        Hoy es un día muy especial porque nació
+        una de las personas más importantes para mí.
+    </p>
+
+    <button onclick="mostrarSorpresa()">💌 Tengo una sorpresa para ti</button>
+
+<a href="https://open.spotify.com/intl-es/track/3bn6CxnWxuvYZz3i9vE2dc?si=ca246bee3543477f" target="_blank">
+    🎵 Escuchar nuestra canción 💗
+</a>
+</a>    
+</div>
+
+</style>
+<style>
+    .corazones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.corazones span {
+    position: absolute;
+    bottom: -50px;
+    font-size: 30px;
+    animation: flotar 6s linear infinite;
+}
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+.corazones span:nth-child(1) {
+    left: 10%;
+}
+
+.corazones span:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.corazones span:nth-child(3) {
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.corazones span:nth-child(4) {
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.corazones span:nth-child(5) {
+    left: 90%;
+    animation-delay: 4s;
+}
+
+    button {
+        background: #ff5c9a;
+        color: white;
+        border: none;
+        padding: 16px 30px;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+
+</style>
+<div id="sorpresa">
+
+    <h2>💌 Para la persona que da sentido a todo </h2>
+   <img src="imagenes/IMG_1476.jpg" width="300" style="border-radius: 20px;">
+<img src="imagenes/IMG_1475.jpg" width="300" style="border-radius: 20px;">
+    <p>
+        Feliz cumpleaños, mora 💗
+    </p>
+
+    
+       <p>
+    Gracias por estar siempre conmigo, por todas las risas,
+    por escucharme, por aguantarme y por hacer que cada momento
+    contigo sea especial. No cambiaría nuestra amistad por nada. 💗
+</p>
+    
+<p>
+    Espero que este año sea increíble para ti, que cumplas todos
+    tus sueños y que nunca te falten motivos para sonreír.
+    Y obviamente espero estar a tu lado para vivirlo todo contigo. 🫶🏻
+</p>
+
+    <h2>Te quiero muchísimo y espero que sigamos juntas durante muchísimos años más 🫶🏻💗</h2>
+<p>
+    Pero espera... 👀
+</p>
+<div class="sobre" onclick="abrirCarta()">
+    💌
+</div>
+
+<div id="carta">
+    <h2>💗 Para ti 💗</h2>
+
+    <p>
+        Gracias por formar parte de mi vida y por todos los momentos
+        que hemos vivido juntas, nos conocemos desde el 2023 y ya casi
+        estamos en 2027, siempre seras esa persona que se queda en el alma,
+        y con el alma es como te quiero. Espero que sigamos creando muchísimos
+        recuerdos más y poder dedicarte mis palabras hasta el dia en que no pueda escribir.
+         Eres increíble y siempre vamos a ser tu y yo por muchos malos encuentros que tengamos
+         o malentendidos, que nunca nos hagan separarnos y que nos hagan ser mas fuertes,
+        para mi somos mas que una amistad, somos familia, porque tu madre, tu padre, tu hermano
+        (aunque es mas vergonzoso) me acogieron desde el primer dia, por eso siempre estaré agradecida
+         y orgullosa de poder decir que yo si he encontrado a mi segunda familia. Te quiero, y a ellos también. 🥹
+    </p>
+
+    
+</div>
+<button onclick="alert('Eres una de las personas más importantes de mi vida. Te quiero muchísimo 💗🎂')">
+    🎁 Última sorpresa
+</button>
+</div>
+<style>
+    .sobre {
+    font-size: 80px;
+    cursor: pointer;
+    margin: 25px;
+    transition: transform 0.3s;
+}
+
+.sobre:hover {
+    transform: scale(1.15);
+}
+
+#carta {
+    display: none;
+    animation: aparecer 0.6s ease;
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+    #sorpresa {
+        display: none;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 35px;
+        margin: 30px auto;
+        border-radius: 25px;
+        max-width: 700px;
+    }
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+</style>
+<script>
+
+    function mostrarSorpresa() {
+        document.getElementById("sorpresa").style.display = "block";
+    }
+function abrirCarta() {
+    document.getElementById("carta").style.display = "block";
+}
+</script>
+</body>
+</html>
